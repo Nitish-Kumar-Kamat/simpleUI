@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+    header {
+      background-color: #3c8dbc;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    .sidebar {
+      width: 200px;
+      background: #222d32;
+      color: #b8c7ce;
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: #b8c7ce;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background: #1a2226;
+    }
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+  <div class="content">
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>This is your simple dashboard.</p>
+    </div>
+    <div class="card">
+      <h3>Statistics</h3>
+      <p>Users: 123</p>
+      <p>Sales: $4567</p>
+    </div>
+    <div class="card">
+      <h3>Recent Activity</h3>
+      <ul>
+        <li>User John logged in.</li>
+        <li>New order placed.</li>
+        <li>Settings updated.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
